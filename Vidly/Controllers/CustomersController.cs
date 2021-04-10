@@ -33,7 +33,8 @@ namespace Vidly.Controllers
 
         public ActionResult Details(int id)
         {
-            var customer = db.Customers.SingleOrDefault(c => c.Id == id);
+            // SingleOrDefault means select * from Customers Where Id = id  only return Single Record
+            var customer = db.Customers.Include(c => c.MembershipType).SingleOrDefault(c => c.Id == id);
 
             if (customer == null)
                 return HttpNotFound();

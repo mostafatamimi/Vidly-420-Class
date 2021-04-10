@@ -18,5 +18,7 @@ namespace Vidly.Models
         // This is the foreign key connecting the two models in the DB
         public MembershipType MembershipType { get; set; }
         public byte MembershipTypeId { get; set; }
+
+        public DateTime? Birthdate { get; set; }
     }
 }

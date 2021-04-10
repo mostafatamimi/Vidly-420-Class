@@ -201,6 +201,10 @@
     <Compile Include="Migrations\202104100635568_DataAnnotateToCustomer.Designer.cs">
       <DependentUpon>202104100635568_DataAnnotateToCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104100713092_AddBirthdateToCustomer.cs" />
+    <Compile Include="Migrations\202104100713092_AddBirthdateToCustomer.Designer.cs">
+      <DependentUpon>202104100713092_AddBirthdateToCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -411,6 +415,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104100635568_DataAnnotateToCustomer.resx">
       <DependentUpon>202104100635568_DataAnnotateToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104100713092_AddBirthdateToCustomer.resx">
+      <DependentUpon>202104100713092_AddBirthdateToCustomer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
